@@ -1,0 +1,109 @@
+/* General layout created with AI assistance
+   and reviewed by the author. */
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 620px;
+  padding: 90px 8%;
+  overflow: hidden;
+  color: white;
+  background:
+    radial-gradient(
+      circle at 80% 30%,
+      rgba(182, 106, 67, 0.45),
+      transparent 35%
+    ),
+    linear-gradient(135deg, #253829 0%, #4f6b3c 55%, #667a46 100%);
+}
+
+.hero::before {
+  position: absolute;
+  top: 80px;
+  right: 10%;
+  width: 310px;
+  height: 310px;
+  content: "";
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+}
+
+.hero::after {
+  position: absolute;
+  right: 18%;
+  bottom: 60px;
+  width: 180px;
+  height: 180px;
+  content: "";
+  background-color: rgba(246, 241, 231, 0.09);
+  border-radius: 50%;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+}
+
+.hero__eyebrow {
+  margin-bottom: 20px;
+  color: #e9c6aa;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  max-width: 700px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+}
+
+.hero__subtitle {
+  max-width: 600px;
+  margin: 28px 0 34px;
+  color: #e2e8dd;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.hero__button {
+  display: inline-block;
+  padding: 14px 24px;
+  color: #253829;
+  background-color: #f6f1e7;
+  border-radius: 999px;
+  font-weight: 700;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.hero__button:hover,
+.hero__button:focus-visible {
+  background-color: #e9c6aa;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 700px) {
+  .hero {
+    min-height: 540px;
+    padding: 70px 24px;
+  }
+
+  .hero::before {
+    right: -130px;
+  }
+
+  .hero::after {
+    right: 5%;
+  }
+
+  .hero__subtitle {
+    font-size: 1rem;
+  }
+}

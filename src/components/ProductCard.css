@@ -1,0 +1,98 @@
+/* General layout created with AI assistance
+   and reviewed by the author. */
+   
+.product-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: white;
+  border: 1px solid rgba(37, 56, 41, 0.12);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(37, 56, 41, 0.08);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 38px rgba(37, 56, 41, 0.16);
+}
+
+.product-card__image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.product-card__content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.product-card__name {
+  color: #253829;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+}
+
+.product-card__description {
+  flex: 1;
+  margin: 14px 0 24px;
+  color: #667066;
+  line-height: 1.6;
+}
+
+.product-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.product-card__price {
+  color: #253829;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.product-card__button {
+  padding: 10px 16px;
+  color: white;
+  background-color: #b66a43;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 700;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.product-card__button:hover,
+.product-card__button:focus-visible {
+  background-color: #253829;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 380px) {
+  .product-card__footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .product-card__button {
+    width: 100%;
+  }
+}
+
+.product-card__details {
+  align-self: flex-start;
+  margin-bottom: 20px;
+  color: #b66a43;
+  font-weight: 700;
+  text-decoration: underline;
+}

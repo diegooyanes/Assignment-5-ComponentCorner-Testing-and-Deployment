@@ -1,0 +1,51 @@
+/* General layout created with AI assistance
+   and reviewed by the author. */
+
+.product-details a {
+  color: #b66a43;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.product-details h1 {
+  margin: 24px 0;
+  color: #253829;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.product-details img {
+  display: block;
+  width: 100%;
+  max-width: 620px;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+.product-details p {
+  max-width: 620px;
+  margin-top: 18px;
+  line-height: 1.6;
+}
+
+.product-details p:last-of-type {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.product-details button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  color: white;
+  background-color: #b66a43;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.product-details button:hover,
+.product-details button:focus-visible {
+  background-color: #253829;
+}

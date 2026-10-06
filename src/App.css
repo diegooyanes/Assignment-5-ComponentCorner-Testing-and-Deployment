@@ -1,0 +1,143 @@
+/* General layout created with AI assistance
+   and reviewed by the author. */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f6f1e7;
+  color: #20251f;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.products-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.section-heading {
+  max-width: 650px;
+  margin-bottom: 40px;
+}
+
+.cart-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px 80px;
+  scroll-margin-top: 110px;
+}
+
+.cart-section h2 {
+  margin-bottom: 24px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2rem;
+  color: #253829;
+}
+
+.cart-list {
+  list-style: none;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(37, 56, 41, 0.15);
+}
+
+.cart-item span:first-child {
+  flex: 1;
+}
+
+.cart-item button {
+  padding: 8px 14px;
+  color: white;
+  background-color: #b66a43;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.cart-item button:hover,
+.cart-item button:focus-visible {
+  background-color: #253829;
+}
+
+.cart-total {
+  margin-top: 24px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: right;
+}
+
+.section-heading > p,
+.about-section > p {
+  color: #b66a43;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.section-heading h2,
+.about-section h2 {
+  margin: 12px 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.section-heading span,
+.about-section span {
+  color: #596158;
+  line-height: 1.7;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.about-section {
+  padding: 80px 24px;
+  background-color: #253829;
+  color: white;
+  text-align: center;
+}
+
+.about-section span {
+  display: block;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #e2e8dd;
+}
+
+@media (max-width: 850px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
