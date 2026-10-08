@@ -11,7 +11,6 @@ function Header({ storeName, cartCount }) {
       <nav className="header__nav" aria-label="Main navigation">
         <Link to="/">Home</Link>
         <Link to="/products">Products</Link>
-        <Link to="/cart">Cart</Link>
       </nav>
 
       <Link
