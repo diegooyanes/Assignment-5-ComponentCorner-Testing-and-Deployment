@@ -70,3 +70,5 @@ npm run build
 ## AI assistance
 
 Generative AI was used to suggest portions of the CSS styling and to help find suitable product images and cite their sources correctly. The CSS was reviewed, modified, and tested by the author.
+
+When refreshing a route such as `/cart` returned a 404 error on Vercel, I used AI to help find the cause. It pointed me to Vercel's documentation, where I learned about using `vercel.json` to rewrite routes to `/index.html`. After adding the file, I checked the deployed app again and the routes worked when opened directly or refreshed.
